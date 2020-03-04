@@ -1,0 +1,201 @@
+<main>
+    <div class="container" style="margin: 0 !important;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+          <div class="card-view card-view-body">
+            <div class="card-min-two-elements">
+              <p>Administración de los Sensores</p><br>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Tarjeta</th>
+                    <th>Pin</th>
+                    <th>ID Sensor</th>
+                    <th>Colocación</th>
+                    <th>Tipo de Sensor</th>
+                    <th>Estado</th>
+                    <th>Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let Sensor of ListaSensores">
+                    <td>{{ Sensor.Tarjeta }}</td>
+                    <td>{{ Sensor.Pin }}</td>
+                    <td>{{ Sensor.IDSensor }}</td>
+                    <td>{{ Sensor.Colocacion }}</td>
+                    <td>{{ Sensor.TipoSensor }}</td>
+                    <td *ngIf="Sensor.Estado === 'Activado'">
+                      <div class="float-none activo">Activado</div>
+                    </td>
+                    <td *ngIf="Sensor.Estado === 'Desconectado'">
+                      <div class="float-none desactivado">Desconectado</div>
+                    </td>
+                    <td *ngIf="Sensor.Estado === 'Abrir'">
+                      <div class="float-none activo">Activado</div>
+                    </td>
+                    <td *ngIf="Sensor.Estado === 'Cerrado'">
+                      <div class="float-none desactivado">Cerrado</div>
+                    </td>
+                    <td>
+                      <div class="a">
+                        <a (click)="ApagarSensor(Sensor.$key, Sensor.Estado)"><i class="fa fa-power-off"></i></a>
+
+                        <a class="waves-light" data-toggle="modal"
+                        data-target="#basicExample" (click)="demoBasic.show()"
+                        mdbWavesEffect (click)="AntesActualizarSensor(Sensor)"><i class="fa fa-pencil"></i></a>
+
+                        <a (click)="AntesDeBorrar(Sensor.$key)"><i class="fa fa-trash"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="card-view card-view-body">
+              <div class="card-min-two-elements">
+                <p>Estado de los sensores</p>
+              </div><br>
+              <grafica-pastel-estado-sensor></grafica-pastel-estado-sensor>
+              <div class="table-responsive oit-panel-control-r">
+              <table class="table sensores oit-panel-control">
+              <thead>
+                <tr>
+                  <th>Tipo de Sensor</th>
+                  <th>Localizacion</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="icono-tipo">
+                      <div class="f">
+                        <div class="presencia"></div>
+                        <p class="text-center">Sensor de Presencia</p>
+                      </div>
+                  </td>
+                  <td>
+                    <p class="p">Mostrador</p>
+                  </td>
+                  <td>
+                    <div class="g">
+                      <grafica-chica-mostrador percent="90" barColor="27AE60" trackColor="f2f2f2"
+                        scaleColor="DBDBDB" scaleLength="0" lineCap="round" lineWidth="5"
+                        trackWidth="5" size="55" rotate="0" [animate]="{duration: 1000, enabled: true}">
+                      </grafica-chica-mostrador>
+                      <p class="a">
+                        {{ SensoresPresenciaActivados }} / {{ TotalSensoresPrecencia }}
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="icono-tipo">
+                    <div class="s">
+                      <div class="servo"></div>
+                      <p>Servo</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="pp">Puerta</p>
+                  </td>
+                  <td>
+                    <grafica-chica-almacen percent="75" barColor="e74c3c" trackColor="f2f2f2"
+                      scaleColor="DBDBDB" scaleLength="0" lineCap="round" lineWidth="5"
+                      trackWidth="5" size="55" rotate="0" [animate]="{duration: 1000, enabled: true}">
+                    </grafica-chica-almacen>
+                    <p class="aa">
+                      {{ ServosActivados }} / {{ TotalServos }}
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="icono-tipo">
+                    <div class="f">
+                      <div class="movimiento"></div>
+                      <p class="text-center">Sensor de Movimiento</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="ppp">Pasillo</p>
+                  </td>
+                  <td>
+                    <div>
+                      <grafica-chica-almacen percent="75" barColor="f1c40f" trackColor="f2f2f2"
+                        scaleColor="DBDBDB" scaleLength="0" lineCap="round" lineWidth="5"
+                        trackWidth="5" size="55" rotate="0" [animate]="{duration: 1000, enabled: true}">
+                      </grafica-chica-almacen>
+                    </div>
+                    <p class="aaa">
+                      {{ SensoresMovimientoActivos }} / {{ TotalSensoresMovimiento }}
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <button type="button" class="btn btn-primary waves-light" mdbWavesEffect>Sincronizar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</main>
+
+
+<div mdbModal #demoBasic="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100" id="myModalLabel">Sensor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="demoBasic.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                  <input type="hidden" name="$key" #$key="ngModel"
+                  [(ngModel)]="Metodos.SensorSeleccionado.$key">
+
+                  <div class="md-form" style="margin-top: 0;">
+                    <input type="text" class="form-control" 
+                    placeholder="N° Tarjeta" name="Tarjeta"
+                    [(ngModel)]="Metodos.SensorSeleccionado.Tarjeta">
+                  </div>
+                  <div class="md-form">
+                    <input type="text" class="form-control" 
+                    placeholder="Pin" name="Pin"
+                    [(ngModel)]="Metodos.SensorSeleccionado.Pin">
+                  </div>
+                  <div class="md-form">
+                    <input type="text" class="form-control" 
+                    placeholder="ID Sensor" name="IDSensor"
+                    [(ngModel)]="Metodos.SensorSeleccionado.IDSensor">
+                  </div>
+                  <div class="md-form">
+                    <input type="text" class="form-control" 
+                    placeholder="Colocacion" name="Colocacion"
+                    [(ngModel)]="Metodos.SensorSeleccionado.Colocacion">
+                  </div>
+                  <div class="md-form form-s" style="margin-top: 1.5rem;">
+                    <select class="mi_clase" name="TipoSensor"
+                    [(ngModel)]="Metodos.SensorSeleccionado.TipoSensor"
+                    style="display: block !important;">
+                      <option value="Sensor de Presencia">Sensor de Presencia</option>
+                      <option value="Sensor de Movimiento">Sensor de Movimiento</option>
+                      <option value="Microfono">Microfono</option>
+                      <option value="Servo">Servo</option>
+                    </select>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="demoBasic.hide()" mdbWavesEffect>Cerrar</button>
+                <button type="button" class="btn btn-primary btn-sm waves-light" mdbWavesEffect>Actualizar Sensor</button>
+            </div>
+        </div>
+    </div>
+</div>

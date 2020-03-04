@@ -1,0 +1,342 @@
+
+/*table[_ngcontent-c1][_ngcontent-c1] tbody[_ngcontent-c1][_ngcontent-c1] tr[_ngcontent-c1][_ngcontent-c1] td[_ngcontent-c1][_ngcontent-c1] {
+  align-items: center !important;
+}
+padding: 28px 22px 0px 22px !important;
+*/
+
+
+/* Card View Visitas */
+
+.card-view{
+  background: white;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.1rem;
+}
+
+.card-view-body{
+  display: flex;
+  flex: 1 1 auto;
+  padding: 1rem 1.5rem;
+}
+
+.card-view-body-table{
+  flex: 1 1 auto;
+  padding: 1rem 1.5rem;
+}
+
+.card-view-left{
+  width: 45%;
+}
+
+.card-view-right{
+  width: 55%;
+}
+
+.card-view-body .card-view-left p{
+  color: #212121;
+  font-size: 12pt;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.card-view-body .card-view-left p.number{
+  color: #4B4B4B !important;
+  font-size: 30pt;
+}
+
+.card-view-body .card-view-left .card-min-two-elements{
+  display: flex;
+  align-items: center;
+}
+
+.card-view-body .card-view-left .card-min-two-elements p{
+  color: #3CC480 !important;
+}
+
+.card-view-body .card-view-left .card-min-two-elements i{
+  color: #3CC480 !important;
+  font-size: 14pt;
+}
+
+.card-view-body .card-view-left .card-min-two-elements.bad p{
+  color: #E74C3C !important;
+}
+
+.card-view-body .card-view-left .card-min-two-elements.bad i{
+  color: #E74C3C !important;
+  font-size: 14pt;
+}
+
+
+/* Grafica Visitas por Hora del Dia Actual */
+
+.card-view.card-view-body .card-min-two-elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-view.card-view-body .card-min-two-elements p{
+  color: #4B4B4B;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+/* Número de Personas que Visitan el Negocio */
+
+.card-view .card-view-graf-bar p{
+  color: #4B4B4B;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.card-view.card-view-body .card-min-two-elements-left{
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.card-view.card-view-body .card-min-two-elements-left p:first-child{
+  color: #E74C3C;
+  font-weight: bold;
+  padding-right: 5%;
+}
+
+.card-view.card-view-body .card-min-two-elements-left span{
+  color: black;
+}
+
+.card-view.card-view-body .card-min-two-elements-left p{
+  color: #2980B9;
+  font-weight: bold;
+}
+
+
+/* Lugar de Procedencia */
+
+.card-view.card-view-body.map-bar p{
+  color: #4B4B4B;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+
+/* Lista de Clientes Frecuentes */
+
+.card-view .card-view-body-table p{
+  color: #4B4B4B;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table thead.tabla-background{
+  background: #34495E !important;
+}
+
+table thead tr th{
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+table tbody tr th,
+table tbody tr td{
+  color: #4B4B4B !important;
+  font-weight: bold;
+}
+
+.float-none.activo{
+  color: white;
+  background: #27AE60;
+  padding: 3px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.float-none.error{
+  color: white;
+  background: #E74C3C;
+  padding: 3px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.float-none.conectando{
+  color: white;
+  background: #009AFF;
+  padding: 3px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.float-none.desactivado{
+  color: white;
+  background: #BABABA;
+  padding: 3px 20px;
+  width: 100%;
+}
+
+.float-none.mostrando{
+  color: white;
+  background: #27AE60;
+  padding: 3px 20px;
+  width: 80%;
+}
+
+.float-none.conectando{
+  color: white;
+  background: #009AFF;
+  padding: 3px 20px;
+  width: 80%;
+}
+
+.float-none.activo:hover,
+.float-none.error:hover,
+.float-none.conectando:hover,
+.float-none.desactivado{
+  cursor: default;
+}
+
+table[_ngcontent-c1] tbody[_ngcontent-c1] tr[_ngcontent-c1] td[_ngcontent-c1]{
+  font-weight: normal !important;
+}
+
+table.table{
+  margin-bottom: 0;
+}
+
+table.table tbody tr td a{
+  font-size: 14pt;
+  color: #7B7A7A !important;
+}
+
+table.table tbody tr td .a{
+  display: flex;
+}
+
+table.table tbody tr td .a a{
+  font-size: 12pt;
+  color: #7B7A7A !important;
+  padding: 0 5px;
+}
+
+table.table.sensores{
+  margin-bottom: 0;
+}
+
+table.table.sensores th, table.table td{
+  padding-bottom: 1.5rem !important;
+}
+
+table.table tbody tr td.icono-tipo{
+  display: flex;
+}
+
+table.table tbody tr td.icono-tipo p{
+  margin-bottom: 0;
+}
+
+table.table tbody tr td div.caballero{
+  width: 20px;
+  height: 20px;
+  background: #4D5360;
+}
+
+table.table tbody tr td div.dama{
+  width: 20px;
+  height: 20px;
+  background: #F7464A;
+}
+
+table.table tbody tr td div.presencia{
+  width: 20px;
+  height: 15px;
+  background: #55d8fe;
+}
+
+table.table tbody tr td div.servo{
+  width: 14px;
+  height: 15px;
+  background: #ff8373;
+}
+
+table.table tbody tr td div.movimiento{
+  width: 22px;
+  height: 15px;
+  background: #ffda83;
+}
+
+table.table tbody tr td div.microfono{
+  width: 14px;
+  height: 15px;
+  background: #a3a0fb;
+}
+
+table.table tbody tr td div.nino{
+  width: 20px;
+  height: 20px;
+  background: #FDB45C;
+}
+
+table.table tbody tr td div.nina{
+  width: 20px;
+  height: 20px;
+  background: #46BFBD;
+}
+
+.mi_clase{
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+  line-height: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0;
+  padding: 9px 0;
+  display: inline-block !important;
+}
+
+
+div.oit-panel-control-r {
+  margin-top: 15px !important;
+}
+
+table.oit-panel-control thead tr th {
+  padding: 10px 10px 0px 10px !important
+}
+
+table.oit-panel-control tbody tr td {
+  padding: 0px !important;
+}
+
+table.oit-panel-control tbody tr td:first-child {
+  padding: 5px 0px 0px 0px !important;
+}
+
+table.oit-panel-control tbody tr td div {
+  display: flex;
+  align-items: center;
+}
+
+table.oit-panel-control tbody tr td p.mostrador {
+  padding: 17px 0px 14px 0px !important;
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1200px !important;
+  }
+}

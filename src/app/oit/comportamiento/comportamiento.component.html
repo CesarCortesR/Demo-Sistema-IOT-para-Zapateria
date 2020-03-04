@@ -1,0 +1,146 @@
+<main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card-view card-view-body" style="height: 715px; max-height: 715px;">
+            <div class="card-min-two-elements">
+              <p>Zapatos con mas Interacción tienen en la Tienda</p>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Posicion</th>
+                  <th>Foto</th>
+                  <th>Calzado</th>
+                  <th>Marca</th>
+                  <th>Interacciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let Interaccion of RegistroZapatos; let i = index">
+                  <td>{{ i+1 }}</td>
+                  <td>
+                    <div style="width: 60px; height: auto !important;">
+                        <img class="img-fluid" src= "{{ Interaccion.Foto}}">
+                    </div>
+                  </td>
+                  <td>{{ Interaccion.Calzado }}</td>
+                  <td>{{ Interaccion.Marca }}</td>
+                  <td>{{ Interaccion.InteraccionesMarca }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-view card-view-body">
+            <div class="card-min-two-elements">
+              <p>Tipos de Clientes que Interactuan</p>
+            </div>
+            <app-grafica-tipo-clientes-interactuan></app-grafica-tipo-clientes-interactuan>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Tipo de Clientes</th>
+                  <th>N° de Interacciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <td class="icono-tipo" style="border-top-width: 0px;">
+                    <div class="caballero"></div>
+                    <p>&nbsp;&nbsp;Caballero</p>
+                  </td>
+                  <td>{{ IteraccionCaballero }}</td>
+                </tr>
+                <tr>
+                  <td class="icono-tipo">
+                    <div class="dama"></div>
+                    <p>&nbsp;&nbsp;Dama</p>
+                  </td>
+                  <td>{{ IteraccionDama }}</td>
+                </tr>
+                <tr>
+                  <td class="icono-tipo">
+                    <div class="nino"></div>
+                    <p>&nbsp;&nbsp;Niños</p>
+                  </td>
+                  <td>{{ IteraccionNinos }}</td>
+                </tr>
+                <tr>
+                  <td class="icono-tipo">
+                    <div class="nina"></div>
+                    <p>&nbsp;&nbsp;Niñas</p>
+                  </td>
+                  <td>{{ IteraccionNinas }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+          <div class="card-view card-view-body">
+            <div class="card-min-two-elements">
+              <p>Valoración de las Marcas</p>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Marcas</th>
+                  <th>N° de Interacciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let Interaccion of RegistroZapatos; let i = index">
+                  <td>{{ i+1 }}</td>
+                  <td>{{ Interaccion.Marca }}</td>
+                  <td>{{ Interaccion.InteraccionesMarca }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+          <div class="card-view card-view-body">
+            <div class="card-min-two-elements">
+              <p>Valoración de los Tipos de Calzado</p>
+            </div>
+            <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Tipos de Calzado</th>
+                  <th>N° de Interacciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let Interaccion of RegistroZapatos; let i = index">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ Interaccion.TipoCalzado }}</td>
+                    <td>{{ Interaccion.InteraccionesMarca }}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card-view card-view-body">
+            <div class="card-min-two-elements">
+              <p>Interaccion en los pasillos</p>
+            </div><br>
+            <app-grafica-interaccion-pasillos></app-grafica-interaccion-pasillos>
+          </div>
+        </div>
+      </div><br>
+    </div>
+</main>

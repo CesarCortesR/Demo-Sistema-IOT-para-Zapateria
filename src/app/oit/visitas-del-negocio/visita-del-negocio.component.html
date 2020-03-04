@@ -1,0 +1,132 @@
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card-view">
+          <div class="card-view-body">
+            <div class="card-view-left">
+              <p>Visitas</p>
+              <p class="number">{{ ContadorVisitas }}</p>
+              <div class="card-min-two-elements bad" *ngIf="this.ContadorVisitas < this.DiaAnterior">
+                <i class="material-icons">&#xE5DB;</i>
+                <p>{{ VisitaBaja }} %</p>
+              </div>
+              <div class="card-min-two-elements" *ngIf="this.ContadorVisitas > this.DiaAnterior">
+                <i class="material-icons">&#xE5D8;</i>
+                <p>{{ VisitaSube }} %</p>
+              </div>
+            </div>
+            <div class="card-view-right">
+              <grafica-barra-visitas></grafica-barra-visitas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card-view">
+          <div class="card-view-body">
+            <div class="card-view-left">
+              <p>Visitas de Clientes</p>
+              <p class="number">{{ ContadorClientes }}</p>
+              <div class="card-min-two-elements">
+                <p>&nbsp;</p>
+              </div>
+            </div>
+            <div class="card-view-right">
+              <grafica-barra-visitas-clientes></grafica-barra-visitas-clientes>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card-view">
+          <div class="card-view-body">
+            <div class="card-view-left">
+              <p>Estado Actual</p>
+              <p class="number">Bueno</p>
+              <div class="card-min-two-elements">
+                <i class="material-icons">&#xE5D8;</i>
+                <p>13.8%</p>
+              </div>
+            </div>
+            <div class="card-view-right" align="center">
+              <mdb-simple-chart percent="48" barColor="A3A1FB" trackColor="EDECFE"
+              scaleColor="303030" scaleLength="0" lineWidth="9"
+              trackWidth="10" rotate="0"
+              [animate]="{duration: 1000, enabled: true}">
+              </mdb-simple-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 mt-4">
+        <div class="card-view card-view-body">
+          <div class="card-view-graf-bar">
+            <p>Número de Personas que Visitan el Negocio</p>
+            <div class="card-min-two-elements-left g">
+              <p><span>{{ OperacionMujer }} %</span> Mujeres</p>
+              <p><span>{{ OperacionHombre }} %</span> Hombres</p>
+            </div>
+            <grafica-numero-personas-visitan-negocio></grafica-numero-personas-visitan-negocio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mt-4">
+        <div class="card-view card-view-body map-bar">
+          <p>Lugar de Procedencia</p>
+          <agm-map [latitude]="latMapa" [longitude]="lngMapa" [zoom]="6" style="height: 35.5vh;"
+          [fullscreenControl]="true">
+            <agm-marker *ngFor="let m of markers; let i = index"
+                [latitude]="m.lat"
+                [longitude]="m.lng"
+                [population]="m.population">
+              <agm-info-window >
+                <strong>{{ m.content }}</strong>
+              </agm-info-window>
+            </agm-marker>
+          </agm-map><br>            
+            <div class="card-min-two-elements">
+              <b>México</b>
+              <b>{{ TotalMexico }} Visitas</b>
+            </div>
+            <mdb-progressbar value="90" min="0" max="100" type="info" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100"></mdb-progressbar>
+        </div>
+      </div>
+
+      <div class="col-lg-12 mt-4">
+        <div class="card-view">
+          <div class="card-view-body-table">
+            <p>Lista de Clientes Frecuentes</p>
+              <table class="table">
+                <thead class="tabla-background">
+                  <tr class="text-white">
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Lugar de Procedencia</th>
+                    <th>Número de Visitas</th>
+                    <th>Número de Compras</th>
+                    <th>Última Visita</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr *ngFor="let usuario of ListaUsuario">
+                    <td>{{ usuario.nombre }}</td>
+                    <td>{{ usuario.edad }}</td>
+                    <td>{{ usuario.municipio }}</td>
+                    <td>{{ usuario.numerovisitas }}</td>
+                    <td>{{ usuario.numerocompras }}</td>
+                    <td>{{ usuario.ultimavisita }}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+    </div><br>
+  </div>
+</main>

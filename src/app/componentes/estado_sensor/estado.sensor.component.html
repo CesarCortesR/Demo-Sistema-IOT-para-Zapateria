@@ -1,0 +1,14 @@
+<div style="display: block">
+    <div class="sensores-conectados">
+        <p>Conectados</p>
+        <p>{{ TotalSensoresActivos }} / {{ SumaTodosLosSensores }}</p>
+    </div>
+    <canvas mdbChart
+        [chartType]="chartType"
+        [data]="chartData"
+        [labels]="chartLabels"
+        [colors]="chartColors"
+        [options]="chartOptions"
+        [legend]="true" style="position: relative;">
+    </canvas>
+</div>

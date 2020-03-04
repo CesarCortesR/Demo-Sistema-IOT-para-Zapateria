@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+.side-nav .logo-wrapper {
+    height: 88px !important;
+}
+
+ul.fixed.side-nav li {
+    text-align: center;
+    padding-bottom: 10px !important;
+}
+
+ul.fixed.side-nav li div p:first-child {
+    padding-top: 10px !important;
+}
+
+div.oit-panel-control-r {
+    margin-top: 15px !important;
+}
+
+table.oit-panel-control thead tr th {
+    padding: 10px 10px 0px 10px !important
+}
+
+table.oit-panel-control tbody tr td {
+    padding: 0px !important;
+}
+
+table.oit-panel-control tbody tr td div.g {
+    padding-top: 8px !important;
+}
+
+table.oit-panel-control tbody tr td div.f {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+table.oit-panel-control tbody tr td p {
+    margin: 0px !important;
+}
+
+table.oit-panel-control tbody tr td p.p {
+    text-align: center;
+    margin: 0px !important;
+    padding: 24px 0px 14px 0px !important;
+}
+
+table.oit-panel-control tbody tr td p.pp {
+    text-align: center;
+    margin: 0px !important;
+    padding: 20px 0px 14px 0px !important;
+}
+
+table.oit-panel-control tbody tr td p.ppp {
+    text-align: center;
+    margin: 0px !important;
+    padding: 20px 0px 14px 0px !important;
+}
+
+table.oit-panel-control tbody tr td div.s,
+table.oit-panel-control tbody tr td div.ss {
+    padding-top: 16px !important;
+    text-align: center;
+}
+
+table.oit-panel-control tbody tr td div.s p {
+    margin-left: 45px !important;
+}
+
+table.oit-panel-control tbody tr td div.ss p {
+    margin-left: 25px !important;
+}
+
+.float-none.desactivado {
+    text-align: center;
+}
+
+table.oit-panel-control tbody tr td p.a {
+    margin-bottom: 0 !important;
+    position: absolute;
+    top: 464px;
+    right: 52px;
+}
+
+table.oit-panel-control tbody tr td p.aa {
+    margin-bottom: 0 !important;
+    position: absolute;
+    top: 528px;
+    right: 52px;
+}
+
+table.oit-panel-control tbody tr td p.aaa {
+    margin-bottom: 0 !important;
+    position: absolute;
+    top: 589px;
+    right: 52px;
+}
+
+div.sensores-conectados {
+    font-size: 14pt;
+    font-weight: bold;
+    position: absolute;
+    top: 29%;
+    left: 37%;
+    z-index: 9999999;
+}
+
+div.sensores-conectados p {
+    margin: 0px !important;
+    text-align: center;
+}
+
+.card-view.card-view-body .card-min-two-elements-left.g {
+    padding-bottom: 0px !important;
+}
+
+.mdb-skin .side-nav .collapsible .card.active .card-header a h5 .fa {
+    color: #4b4b4b;
+}
+
+.mdb-skin .side-nav .collapsible .card .card-header a:hover {
+    background-color: transparent !important;
+}
+
+.mdb-skin .side-nav .collapsible .card.active .card-header a h5 {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.side-nav .collapsible .card-body li a {
+    background-color: transparent !important;
+    color: #4b4b4b !important;
+    font-weight: 300 !important;
+    font-size: 10pt !important;
+}

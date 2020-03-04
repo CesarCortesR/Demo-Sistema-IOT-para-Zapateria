@@ -1,0 +1,80 @@
+<header>
+  <mdb-sidenav #sidenav class="fixed" [fixed]="true">
+    <logo>
+      <li>
+        <div class="logo-wrapper waves-light">
+          <p class="nombre">Jonh Smit 2</p>
+          <p class="correo">jonh.smit@gmail.com</p>
+        </div>
+      </li>
+    </logo>
+    <links>
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <mdb-squeezebox [multiple]="false" aria-multiselectable="false">
+
+            <mdb-item class="no-collase">
+                <mdb-item-head mdbWavesEffect>
+                  <a [routerLink]="['/oit-panel-control']" style="display: flex; align-items: center; font-size: 11pt; color: #4B4B4B !important;">
+                    <i class="material-icons">assessment</i> &nbsp;&nbsp;&nbsp;Vista General
+                  </a></mdb-item-head>
+                <mdb-item-body></mdb-item-body>
+            </mdb-item>
+
+            <mdb-item>
+              <mdb-item-head mdbWavesEffect>
+                <a style="display: flex; align-items: center; font-size: 11pt; color: #4B4B4B !important;">
+                  <i class="material-icons">cast</i> &nbsp;&nbsp;&nbsp;OIT
+                </a>
+              </mdb-item-head>
+              <mdb-item-body>
+                <ul>
+                  <li><a [routerLink]="['/oit-panel-control']">Panel de Control</a></li>
+                  <li><a [routerLink]="['/oit-visitas-negocio']">Visitas del Negocio</a></li>
+                  <li><a [routerLink]="['/oit-comportamiento']">Comportamiento</a></li>
+                </ul>
+              </mdb-item-body>
+            </mdb-item>
+
+          </mdb-squeezebox>
+        </ul>
+      </li>
+    </links>
+  </mdb-sidenav>
+  
+  <mdb-navbar SideClass="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+    [containerInside]="false">
+    <navlinks class="navbar-container">
+      <div class="float-left">
+        <a (click)="sidenav.show()" class="button-collapse"><i class="fa fa-bars"></i></a>
+      </div>
+    
+    </navlinks>
+      <logo>
+        <div class="breadcrumbs breadcrumb-dn mr-auto">
+          <p>&nbsp;&nbsp;&nbsp;NYO</p>
+        </div>
+      </logo>
+
+    <navlinks>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto ie-double-nav">
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <i class="fa fa-bell"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <i class="fa fa-align-right"></i>
+          </a>
+        </li>
+      </ul>
+    </navlinks>
+  </mdb-navbar>
+</header>
+<router-outlet></router-outlet>

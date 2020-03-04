@@ -1,0 +1,275 @@
+{
+  "ArticulosCalzado" : {
+    "-LGlKztQf8UpkqPOqiXJ" : {
+      "Calzado" : "Run",
+      "CodigoCalzado" : "2C345LMMTZ",
+      "Color" : "Negro",
+      "Existencia" : "100",
+      "Foto" : "https://firebasestorage.googleapis.com/v0/b/nyo-angular.appspot.com/o/ArticulosCalzado%2F2015-Nike-Mag-02_original.jpg?alt=media&token=f0e1151c-5692-4680-8619-955095c0f4da",
+      "IDSensor" : "1R234WLMN",
+      "InteraccionesMarca" : 0,
+      "InteraccionesTipoCalzado" : 0,
+      "IteraccionesTipoPersona" : 0,
+      "Marca" : "Nike",
+      "PrecioCompra" : "10",
+      "PrecioVenta" : "20",
+      "Talla" : "7",
+      "TipoCalzado" : "Deportivo",
+      "TipoPersona" : "100"
+    },
+    "-LGlLP-ljoKXryXfw8g2" : {
+      "Calzado" : "Zapato de Tercio Pelo",
+      "CodigoCalzado" : "1R234WLMN",
+      "Color" : "Verde",
+      "Existencia" : "50",
+      "Foto" : "https://firebasestorage.googleapis.com/v0/b/nyo-angular.appspot.com/o/ArticulosCalzado%2Fzapatillas-nike-HyperAdapt-1.0%20(1).jpg?alt=media&token=43feb38a-ad28-4714-86d1-108a0b189119",
+      "IDSensor" : "2C345LMMTZ",
+      "InteraccionesMarca" : 0,
+      "InteraccionesTipoCalzado" : 0,
+      "IteraccionesTipoPersona" : 0,
+      "Marca" : "Flexi",
+      "PrecioCompra" : "20",
+      "PrecioVenta" : "50",
+      "Talla" : "6",
+      "TipoCalzado" : "Casual",
+      "TipoPersona" : "50"
+    },
+    "-LGlV9vDVmOYLStFei2h" : {
+      "Calzado" : "Zapato de Tercio Pelo",
+      "CodigoCalzado" : "2",
+      "Color" : "Verde",
+      "Existencia" : "12",
+      "Foto" : "https://firebasestorage.googleapis.com/v0/b/nyo-angular.appspot.com/o/ArticulosCalzado%2FCunaMosquitero3.png?alt=media&token=40d8e67b-56e4-4361-acaf-e239d5e5a07c",
+      "IDSensor" : "1R234WLMN",
+      "InteraccionesMarca" : 0,
+      "InteraccionesTipoCalzado" : 0,
+      "IteraccionesTipoPersona" : 0,
+      "Marca" : "Flexi",
+      "PrecioCompra" : "34",
+      "PrecioVenta" : "600",
+      "Talla" : "9",
+      "TipoCalzado" : "Deportivo",
+      "TipoPersona" : "12"
+    }
+  },
+  "Ciudad" : {
+    "23e2323e2" : {
+      "Ciudad" : "Mexico",
+      "Lat" : 23.3143515,
+      "Lng" : -111.6390643
+    }
+  },
+  "GraficaHoraInteraccionPasillos" : {
+    "-LDj5vjEjeb2yIRx-Ls1" : {
+      "Hora" : "7 - 8",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls10" : {
+      "Hora" : "16 - 17",
+      "NumInteracciones1" : 36,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls11" : {
+      "Hora" : "16 - 17",
+      "NumInteracciones1" : 37,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls12" : {
+      "Hora" : "17 - 18",
+      "NumInteracciones" : 0,
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls13" : {
+      "Hora" : "18 - 19",
+      "NumInteracciones1" : 1,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls14" : {
+      "Hora" : "19 - 20",
+      "NumInteracciones1" : 10,
+      "NumInteracciones2" : 4
+    },
+    "-LDj5vjEjeb2yIRx-Ls15" : {
+      "Hora" : "20 - 21",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls2" : {
+      "Hora" : "8 - 9",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls3" : {
+      "Hora" : "9 - 10",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls4" : {
+      "Hora" : "10 - 11",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls5" : {
+      "Hora" : "11 - 12",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 1
+    },
+    "-LDj5vjEjeb2yIRx-Ls6" : {
+      "Hora" : "12 - 13",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls7" : {
+      "Hora" : "13 - 14",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 0
+    },
+    "-LDj5vjEjeb2yIRx-Ls8" : {
+      "Hora" : "14 - 15",
+      "NumInteracciones1" : 0,
+      "NumInteracciones2" : 5
+    },
+    "-LDj5vjEjeb2yIRx-Ls9" : {
+      "Hora" : "15 - 16",
+      "NumInteracciones1" : 47,
+      "NumInteracciones2" : 11
+    }
+  },
+  "Sensores" : {
+    "-LDj5vjEjeb2yIRx-L4" : {
+      "Colocacion" : "Puerta",
+      "Estado" : "Cerrado",
+      "IDSensor" : "P1A5",
+      "Interacciones" : 0,
+      "Pin" : 5,
+      "Presencia" : 0,
+      "Tarjeta" : 1,
+      "TipoSensor" : "Servo"
+    },
+    "-LDj5vjEjeb2yIRx-Ls2" : {
+      "Colocacion" : "Mostrador1",
+      "Estado" : "Desconectado",
+      "IDSensor" : "P1A1",
+      "Interacciones" : 68,
+      "Pin" : 1,
+      "Presencia" : 0,
+      "Tarjeta" : 1,
+      "TipoSensor" : "Sensor de Presencia"
+    },
+    "-LDj5vjEjeb2yIRx-Ls3" : {
+      "Colocacion" : "Mostrador2",
+      "Estado" : "Desconectado",
+      "IDSensor" : "P1A2",
+      "Interacciones" : 73,
+      "Pin" : 2,
+      "Presencia" : 0,
+      "Tarjeta" : 1,
+      "TipoSensor" : "Sensor de Presencia"
+    },
+    "-LDj5vjEjeb2yIRx-Ls6" : {
+      "Colocacion" : "Movimiento1",
+      "Estado" : "Activado",
+      "IDSensor" : "P1A4",
+      "Interacciones" : 79,
+      "Pin" : 3,
+      "Presencia" : 0,
+      "Tarjeta" : 0,
+      "TipoSensor" : "Sensor de Movimiento"
+    },
+    "-LDj5vjEjeb2yIRx-Ls7" : {
+      "Colocacion" : "Movimiento2",
+      "Estado" : "Activado",
+      "IDSensor" : "P1A6",
+      "Interacciones" : 2,
+      "Pin" : 4,
+      "Presencia" : 0,
+      "Tarjeta" : 1,
+      "TipoSensor" : "Sensor de Movimiento"
+    },
+    "-LDj5vjEjeb2yIRx-Ls8" : {
+      "Colocacion" : "Provadores",
+      "Estado" : "Activado",
+      "IDSensor" : "PRM1",
+      "Interacciones" : 0,
+      "Pin" : 0,
+      "Presencia" : 0,
+      "Tarjeta" : 0,
+      "TipoSensor" : "Microfono"
+    }
+  },
+  "TablaMostrador" : {
+    "-M1YTbyp42-Npa-j9-bV" : {
+      "Calzado" : "Run",
+      "CodigoCalzado" : "2C345LMMTZ",
+      "Colocacion" : "Mostrador1",
+      "Color" : "Negro",
+      "Foto" : "https://firebasestorage.googleapis.com/v0/b/nyo-angular.appspot.com/o/ArticulosCalzado%2F2015-Nike-Mag-02_original.jpg?alt=media&token=f0e1151c-5692-4680-8619-955095c0f4da",
+      "IDSensor" : "P1A1",
+      "InteraccionesMarca" : 0,
+      "InteraccionesTipoCalzado" : 0,
+      "IteraccionesTipoPersona" : 0,
+      "Marca" : "Nike",
+      "Talla" : "7",
+      "TipoCalzado" : "Deportivo",
+      "TipoPersona" : "Caballero"
+    },
+    "-M1YTkcg336eQMsaeEzp" : {
+      "Calzado" : "Zapato de Tercio Pelo",
+      "CodigoCalzado" : "1R234WLMN",
+      "Colocacion" : "Mostrador2",
+      "Color" : "Verde",
+      "Foto" : "https://firebasestorage.googleapis.com/v0/b/nyo-angular.appspot.com/o/ArticulosCalzado%2Fzapatillas-nike-HyperAdapt-1.0%20(1).jpg?alt=media&token=43feb38a-ad28-4714-86d1-108a0b189119",
+      "IDSensor" : "P1A2",
+      "InteraccionesMarca" : 0,
+      "InteraccionesTipoCalzado" : 0,
+      "IteraccionesTipoPersona" : 0,
+      "Marca" : "Flexi",
+      "Talla" : "6",
+      "TipoCalzado" : "Casual",
+      "TipoPersona" : "Nino"
+    }
+  },
+  "VisitasDiaAnterior" : {
+    "-LFG4M9C8G3u_8DvjT11" : {
+      "DiaAnterior" : 200
+    }
+  },
+  "usuarios" : {
+    "23d3d3" : {
+      "ciudad" : "Mexico",
+      "edad" : 18,
+      "hora" : "18:56",
+      "municipio" : "Mexico",
+      "nombre" : "Pedro Gonzales",
+      "numerocompras" : 8,
+      "numerovisitas" : 10,
+      "sexo" : "Hombre",
+      "ultimavisita" : "06 de Agosto del 2018",
+      "usuario" : "Pedro Gonzales"
+    },
+    "d23e23e" : {
+      "edad" : 20,
+      "hora" : "11:21",
+      "municipio" : "Mexico",
+      "nombre" : "Pablo Morales",
+      "numerocompras" : 5,
+      "numerovisitas" : 25,
+      "sexo" : "Hombre",
+      "ultimavisita" : "06 de Julio de 2018",
+      "usuario" : "Pablo Morales"
+    },
+    "faradius" : {
+      "edad" : "24",
+      "hora" : 15.35,
+      "municipio" : "Mexico",
+      "nombre" : "Ricardo Marzine",
+      "numerocompras" : "1",
+      "numerovisitas" : 3,
+      "sexo" : "Hombre",
+      "ultimavisita" : "06 de Septiembre de 2018",
+      "usuario" : "Ricardo Martinez"
+    }
+  }
+}
